@@ -1,0 +1,6 @@
+1. dotnet new [project type] - create new project (need to specify project type as )
+2. dotnet add package - download a package fron Nuget
+3. we can extend dotnet CLI using additional packages like DotNetCliToolReference (and can be added to project only manually)
+
+	<DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0 " />
+4

@@ -3,9 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "configuration", "configuration", "{F7E1CF64-70E8-4B11-BD5F-B3F4A76B618E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "routing", "routing", "{AA68C1EE-6C80-4DA0-B7D6-E068ECBC9E7C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "controllers.and.actions", "controllers.and.actions", "{4A05B3F7-8755-42E2-8694-54855AB043F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "documents", "documents", "{3ADE5E12-0A5E-4A8B-BE2A-87DBE2DBEE41}"
+	ProjectSection(SolutionItems) = preProject
+		dotnet.cli.txt = dotnet.cli.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZzzz.Learning.Core.Configuration", "DZzzz.Learning.Core.Configuration\DZzzz.Learning.Core.Configuration.csproj", "{605FB547-CB8B-434A-9008-B231141E08ED}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{605FB547-CB8B-434A-9008-B231141E08ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{605FB547-CB8B-434A-9008-B231141E08ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{605FB547-CB8B-434A-9008-B231141E08ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{605FB547-CB8B-434A-9008-B231141E08ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{605FB547-CB8B-434A-9008-B231141E08ED} = {F7E1CF64-70E8-4B11-BD5F-B3F4A76B618E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C62790FA-45C8-4324-A7F9-CBE92979BDBE}
