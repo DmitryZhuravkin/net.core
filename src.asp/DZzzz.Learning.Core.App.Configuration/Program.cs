@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 
 namespace DZzzz.Learning.Core.App.Configuration
 {
@@ -21,13 +22,30 @@ namespace DZzzz.Learning.Core.App.Configuration
                     config.AddJsonFile("appsettings.json", true, true); // load from external file
                     config.AddEnvironmentVariables();
 
+                    config.AddJsonFile($"appsettings.{hostingContext.HostingEnvironment.EnvironmentName}.json", true,
+                        true); // load from external file
+
                     if (args != null)
                     {
                         config.AddCommandLine(args);
                     }
                 })
+                .ConfigureLogging((hostingContext, logging) => // configure logging
+                {
+                    logging.AddConfiguration(hostingContext.Configuration.GetSection("Logging")); // load logging
+                    logging.AddConsole();
+                    logging.AddDebug(); // DEBUG output window when the VS is running
+                })
                 .UseIISIntegration()
-                .UseStartup<Startup>();
+                .UseDefaultServiceProvider(
+                    (context, options) => // for Dependency Injection configuration, alternative providers can be used
+                    {
+                        options.ValidateScopes =
+                            context.HostingEnvironment.IsDevelopment(); // for Entity Framework Core ??????
+                    })
+                .UseStartup("DZzzz.Learning.Core.App.Configuration");
+            //.UseStartup<CustomEnvWithMethodsStartup>();
+            //.UseStartup<Startup>();
         }
     }
 }

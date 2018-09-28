@@ -1,32 +1,25 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DZzzz.Learning.Core.App.Configuration
 {
-    public class Startup
+    // method with appropriate environment name will be used
+    public class CustomEnvWithMethodsStartup
     {
-        private readonly IConfiguration configuration;
-
-        public Startup(IConfiguration configuration) // NOTE: we can pass IConfiguration object to startup class
+        public void ConfigureServices(IServiceCollection services)
         {
-            this.configuration = configuration;
+            services.AddMvc();
         }
 
-        public void ConfigureServices(IServiceCollection services)
+        // this method will be used except ConfigureServices method for Development environment
+        public void ConfigureDevelopmentServices(IServiceCollection services)
         {
             services.AddMvc();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            // reading configuration
-            bool boolValue = configuration.GetSection("CustomTestConfiguration").GetValue<bool>("Option1");
-            int intValue = configuration.GetSection("CustomTestConfiguration").GetValue<int>("Option2");
-            string stringValue = configuration.GetSection("CustomTestConfiguration").GetValue<string>("Option3");
-
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -42,6 +35,12 @@ namespace DZzzz.Learning.Core.App.Configuration
             {
                 routes.MapRoute("Default", "{controller=Home}/{action=Index}/{id?}");
             });
+        }
+
+        // this method will be used except Configure method for Development environment
+        public void ConfigureDevelopment(IApplicationBuilder app, IHostingEnvironment env)
+        {
+            
         }
     }
 }
