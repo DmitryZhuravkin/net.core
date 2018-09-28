@@ -20,6 +20,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DZzzz.Learning.Core.Middlwa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZzzz.Learning.Core.App.Configuration", "DZzzz.Learning.Core.App.Configuration\DZzzz.Learning.Core.App.Configuration.csproj", "{928299B0-DC72-4BEB-8A9E-4A42F46D3624}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZzzz.Learning.Core.Routing", "DZzzz.Learning.Core.Routing\DZzzz.Learning.Core.Routing.csproj", "{C8178B1C-AC19-4917-8AFF-9064790DFED2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,10 @@ Global
 		{928299B0-DC72-4BEB-8A9E-4A42F46D3624}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{928299B0-DC72-4BEB-8A9E-4A42F46D3624}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{928299B0-DC72-4BEB-8A9E-4A42F46D3624}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8178B1C-AC19-4917-8AFF-9064790DFED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8178B1C-AC19-4917-8AFF-9064790DFED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8178B1C-AC19-4917-8AFF-9064790DFED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8178B1C-AC19-4917-8AFF-9064790DFED2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{605FB547-CB8B-434A-9008-B231141E08ED} = {F7E1CF64-70E8-4B11-BD5F-B3F4A76B618E}
 		{8D9967D5-B651-4E28-AC70-45F1DE51376A} = {F7E1CF64-70E8-4B11-BD5F-B3F4A76B618E}
 		{928299B0-DC72-4BEB-8A9E-4A42F46D3624} = {F7E1CF64-70E8-4B11-BD5F-B3F4A76B618E}
+		{C8178B1C-AC19-4917-8AFF-9064790DFED2} = {AA68C1EE-6C80-4DA0-B7D6-E068ECBC9E7C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C62790FA-45C8-4324-A7F9-CBE92979BDBE}
