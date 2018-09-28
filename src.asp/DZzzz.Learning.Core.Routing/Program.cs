@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using Microsoft.AspNetCore.Hosting;
 
-// libman.json - define client0side dependencies
+// libman.json - define client-side dependencies
 
 namespace DZzzz.Learning.Core.Routing
 {

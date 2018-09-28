@@ -16,7 +16,11 @@ namespace DZzzz.Learning.Core.Routing
             app.UseDeveloperExceptionPage();
             app.UseStatusCodePages();
             app.UseStaticFiles();
-            app.UseMvc();
+            app.UseMvc(routes =>
+            {
+                //routes.MapRoute("default", "{controller}/{action}");
+                routes.MapRoute("default", "{controller}/{action}", new { action = "Index" }); // with defaults (if action isn`t specified)
+            });
         }
     }
 }
