@@ -1,0 +1,43 @@
+﻿@using DZzzz.Learning.Core.Routing.Advanced.Model
+@model Result
+@{ Layout = null;}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Advanced routing</title>
+    <link rel="stylesheet" asp-href-include="lib/semantic-ui/*.min.css" />
+</head>
+<body>
+    <div>
+        <table class="ui celled table">
+            <thead>
+                <tr>
+                    <th>Controller</th>
+                    <th>Action</th>
+                    <th>Keys</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Controller">@Model.Controller</td>
+                    <td data-label="Action">@Model.Action</td>
+                    <td data-label="Keys">
+                        <div class="ui divided selection list">
+                            @foreach (string key in Model.Data.Keys)
+                            {
+                                <a class="item">
+                                    <div class="ui red horizontal label">@key</div>
+                                    @Model.Data[key]
+                                </a>
+                            }
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
