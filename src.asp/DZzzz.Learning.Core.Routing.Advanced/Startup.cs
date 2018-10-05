@@ -19,6 +19,7 @@ namespace DZzzz.Learning.Core.Routing.Advanced
 
             app.UseMvc(routes =>
             {
+                routes.MapRoute("NewRoute", "App/Do{action}", new { controller = "Home" });
                 routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
             });
         }

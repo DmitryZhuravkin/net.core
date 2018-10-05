@@ -13,5 +13,14 @@ namespace DZzzz.Learning.Core.Routing.Advanced.Controllers
                 Action = nameof(Index)
             });
         }
+
+        public IActionResult CustomVariable()
+        {
+            return View("Result", new Result
+            {
+                Controller = nameof(HomeController),
+                Action = nameof(CustomVariable)
+            });
+        }
     }
 }
