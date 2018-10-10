@@ -38,8 +38,18 @@
                 </tr>
             </tbody>
         </table>
+
         <a asp-action="CustomVariable">This is outgoing URL (Same controller)</a><br />
-        <a asp-controller="Admin" asp-action="Index">This is outgoing URL (Admin controller)</a>
+        <a asp-controller="Admin" asp-action="Index">This is outgoing URL (Admin controller)</a><br />
+        <a asp-controller="Admin" asp-action="Index" asp-route-id="Hello">This is outgoing URL (Admin controller) with extra parameter</a><br /> @*asp-route-[segment name]*@
+        <a asp-controller="Admin" asp-action="Index" asp-route-id="Hello" asp-protocol="https"
+           asp-host="myserver.mydomain.com" asp-fragment="myFragment">This is Fully qualified URL</a><br />
+        <a asp-route="out">Specific Route (based on route name)</a><br />
+
+        @*Generate URL (not links based on tags )*@
+        <p> URL: @Url.Action("CustomVariable", "Home")</p><br />
+
+        <a asp-route-legacyUrl="/old/.NET_1.0_Class_Library">Outgoing custom route</a>
     </div>
 </body>
 </html>

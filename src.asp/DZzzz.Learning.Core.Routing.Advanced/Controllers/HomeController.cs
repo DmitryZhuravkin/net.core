@@ -14,13 +14,18 @@ namespace DZzzz.Learning.Core.Routing.Advanced.Controllers
             });
         }
 
-        public IActionResult CustomVariable()
+        public IActionResult CustomVariable(string id)
         {
-            return View("Result", new Result
+            Result result = new Result
             {
                 Controller = nameof(HomeController),
                 Action = nameof(CustomVariable)
-            });
+            };
+
+            result.Data["ID"] = id ?? "<no value>";
+            result.Data["Url"] = Url.Action("CustomVariable", "Home", new { id = 100 }); // generate in action method
+
+            return View("Result", result);
         }
     }
 }

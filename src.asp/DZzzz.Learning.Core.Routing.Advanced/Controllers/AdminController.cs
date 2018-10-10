@@ -5,7 +5,7 @@ namespace DZzzz.Learning.Core.Routing.Advanced.Controllers
 {
     public class AdminController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index(string id)
         {
             return View("Result", new Result
             {
