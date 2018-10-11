@@ -1,13 +1,12 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DZzzz.Learning.Core.Routing.Areas
 {
     public class Startup
     {
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
@@ -23,6 +22,11 @@ namespace DZzzz.Learning.Core.Routing.Areas
             }
 
             app.UseStaticFiles();
+            app.UseMvc(router =>
+            {
+                router.MapRoute("areas", "{area:exists}/{controller=Home}/{action=Index}");
+                router.MapRoute("default", "{controller=Home}/{action=Index}"); // we need this because if area segment isn`t presented in URL, we will have 404 error code
+            });
         }
     }
 }
