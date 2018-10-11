@@ -8,6 +8,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "routing", "routing", "{AA68C1EE-6C80-4DA0-B7D6-E068ECBC9E7C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "controllers.and.actions", "controllers.and.actions", "{4A05B3F7-8755-42E2-8694-54855AB043F8}"
+	ProjectSection(SolutionItems) = preProject
+		TODO.txt = TODO.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "documents", "documents", "{3ADE5E12-0A5E-4A8B-BE2A-87DBE2DBEE41}"
 	ProjectSection(SolutionItems) = preProject
@@ -24,7 +27,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DZzzz.Learning.Core.Routing
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DZzzz.Learning.Core.Routing.Advanced", "DZzzz.Learning.Core.Routing.Advanced\DZzzz.Learning.Core.Routing.Advanced.csproj", "{270F5578-2CC1-45C0-AB44-410B176B35C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZzzz.Learning.Core.Routing.Areas", "DZzzz.Learning.Core.Routing.Areas\DZzzz.Learning.Core.Routing.Areas.csproj", "{141033B5-226C-41BB-919A-1D2323C5AF19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DZzzz.Learning.Core.Routing.Areas", "DZzzz.Learning.Core.Routing.Areas\DZzzz.Learning.Core.Routing.Areas.csproj", "{141033B5-226C-41BB-919A-1D2323C5AF19}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dependency.injection", "dependency.injection", "{AD8E92B2-8544-4E4B-9B22-2A8AB806012A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZzzz.Learning.Core.DI", "DZzzz.Learning.Core.DI\DZzzz.Learning.Core.DI.csproj", "{5B44398B-B8BB-4966-88D6-1148750D8CA0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "filters", "filters", "{EB11F9B6-E9B9-4348-8E0A-046090E1F504}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZzzz.Learning.Core.Filters", "DZzzz.Learning.Core.Filters\DZzzz.Learning.Core.Filters.csproj", "{859FB5D6-1C16-4836-93EF-4B04FB94328C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,6 +67,14 @@ Global
 		{141033B5-226C-41BB-919A-1D2323C5AF19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{141033B5-226C-41BB-919A-1D2323C5AF19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{141033B5-226C-41BB-919A-1D2323C5AF19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B44398B-B8BB-4966-88D6-1148750D8CA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B44398B-B8BB-4966-88D6-1148750D8CA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B44398B-B8BB-4966-88D6-1148750D8CA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B44398B-B8BB-4966-88D6-1148750D8CA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{859FB5D6-1C16-4836-93EF-4B04FB94328C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{859FB5D6-1C16-4836-93EF-4B04FB94328C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{859FB5D6-1C16-4836-93EF-4B04FB94328C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{859FB5D6-1C16-4836-93EF-4B04FB94328C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +86,8 @@ Global
 		{C8178B1C-AC19-4917-8AFF-9064790DFED2} = {AA68C1EE-6C80-4DA0-B7D6-E068ECBC9E7C}
 		{270F5578-2CC1-45C0-AB44-410B176B35C8} = {AA68C1EE-6C80-4DA0-B7D6-E068ECBC9E7C}
 		{141033B5-226C-41BB-919A-1D2323C5AF19} = {AA68C1EE-6C80-4DA0-B7D6-E068ECBC9E7C}
+		{5B44398B-B8BB-4966-88D6-1148750D8CA0} = {AD8E92B2-8544-4E4B-9B22-2A8AB806012A}
+		{859FB5D6-1C16-4836-93EF-4B04FB94328C} = {EB11F9B6-E9B9-4348-8E0A-046090E1F504}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C62790FA-45C8-4324-A7F9-CBE92979BDBE}
