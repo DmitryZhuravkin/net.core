@@ -31,11 +31,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DZzzz.Learning.Core.Routing
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dependency.injection", "dependency.injection", "{AD8E92B2-8544-4E4B-9B22-2A8AB806012A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZzzz.Learning.Core.DI", "DZzzz.Learning.Core.DI\DZzzz.Learning.Core.DI.csproj", "{5B44398B-B8BB-4966-88D6-1148750D8CA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DZzzz.Learning.Core.DI", "DZzzz.Learning.Core.DI\DZzzz.Learning.Core.DI.csproj", "{5B44398B-B8BB-4966-88D6-1148750D8CA0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "filters", "filters", "{EB11F9B6-E9B9-4348-8E0A-046090E1F504}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZzzz.Learning.Core.Filters", "DZzzz.Learning.Core.Filters\DZzzz.Learning.Core.Filters.csproj", "{859FB5D6-1C16-4836-93EF-4B04FB94328C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DZzzz.Learning.Core.Filters", "DZzzz.Learning.Core.Filters\DZzzz.Learning.Core.Filters.csproj", "{859FB5D6-1C16-4836-93EF-4B04FB94328C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api.controllers", "api.controllers", "{9AB53548-27D9-4E10-88A8-A976C52A7FAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZzzz.Learning.Core.Api", "DZzzz.Learning.Core.Api\DZzzz.Learning.Core.Api.csproj", "{5B369458-7299-4FDD-A163-AF3DD9069487}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +79,10 @@ Global
 		{859FB5D6-1C16-4836-93EF-4B04FB94328C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{859FB5D6-1C16-4836-93EF-4B04FB94328C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{859FB5D6-1C16-4836-93EF-4B04FB94328C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B369458-7299-4FDD-A163-AF3DD9069487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B369458-7299-4FDD-A163-AF3DD9069487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B369458-7299-4FDD-A163-AF3DD9069487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B369458-7299-4FDD-A163-AF3DD9069487}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,6 +96,7 @@ Global
 		{141033B5-226C-41BB-919A-1D2323C5AF19} = {AA68C1EE-6C80-4DA0-B7D6-E068ECBC9E7C}
 		{5B44398B-B8BB-4966-88D6-1148750D8CA0} = {AD8E92B2-8544-4E4B-9B22-2A8AB806012A}
 		{859FB5D6-1C16-4836-93EF-4B04FB94328C} = {EB11F9B6-E9B9-4348-8E0A-046090E1F504}
+		{5B369458-7299-4FDD-A163-AF3DD9069487} = {9AB53548-27D9-4E10-88A8-A976C52A7FAC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C62790FA-45C8-4324-A7F9-CBE92979BDBE}
