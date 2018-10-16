@@ -15,3 +15,20 @@ Invoke-RestMethod http://localhost:7000/api/reservation/2 -Method PATCH -Body (@
 
 #DELETE delete
 Invoke-RestMethod http://localhost:7000/api/reservation/2 -Method DELETE
+
+#Invoke-WebRequest does not deal with parsing the data all that much. 
+#With -UseBasicParsing, it does some Regex-based HTML parsing. 
+#Without this switch, it’ll use the Internet Explorer COM API to parse the document.
+
+#Invoke-RestMethod on the other hand has code to support JSON and XML content. 
+#It’ll attempt to detect an appropriate decoder. 
+#It does not support HTML (except for XML-compliant HTML, of course).
+
+Invoke-WebRequest http://localhost:7000/api/content/string | select @{n='Content-Type';e={ $_.Headers."Content-Type" }}, Content
+Invoke-WebRequest http://localhost:7000/api/content/int | select @{n='Content-Type';e={ $_.Headers."Content-Type" }}, Content
+Invoke-WebRequest http://localhost:7000/api/content/object | select @{n='Content-Type';e={ $_.Headers."Content-Type" }}, Content
+
+Invoke-WebRequest http://localhost:7000/api/content/object -Headers @{Accept="application/xml"} | select @{n='Content-Type';e={ $_.Headers."Content-Type" }}, Content
+Invoke-WebRequest http://localhost:7000/api/content/jsonobject -Headers @{Accept="application/xml"} | select @{n='Content-Type';e={ $_.Headers."Content-Type" }}, Content
+
+(Invoke-WebRequest http://localhost:7000/api/content/withformatobject/xml).Headers."Content-Type"
