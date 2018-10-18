@@ -1,0 +1,28 @@
+﻿@model string[]
+@{ Layout = "_Layout"; }
+
+@*Razor converts .cshtml into c# class (with RazorPage as base class)
+    \DZzzz.Learning.Core.Views.Razor\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+*@
+
+@section Header {
+    <div class="bg-success">
+        @foreach (string str in new[] { "Home", "List", "Edit" })
+        {
+            <a class="btn btn-sm btn-primary" asp-action="@str">@str</a>
+        }
+    </div>
+}
+
+@section Footer {
+    <div class="bg-success">
+        This is the footer
+    </div>
+}
+
+
+This is a list of fruit names:
+@foreach (string name in Model)
+{
+    <span><b>@name</b></span>
+}
