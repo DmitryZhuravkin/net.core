@@ -49,6 +49,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZzzz.Learning.Core.Views.R
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZzzz.Learning.Core.Views.Razor.Configure", "DZzzz.Learning.Core.Views.Razor.Configure\DZzzz.Learning.Core.Views.Razor.Configure.csproj", "{7299CADE-5E6B-429C-8E33-51B74B35BC7D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "view.components", "view.components", "{12878B02-849F-4CD5-9335-FCBCB74A3F2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZzzz.Learning.Core.View.Components", "DZzzz.Learning.Core.View.Components\DZzzz.Learning.Core.View.Components.csproj", "{6360F132-213A-4ECA-943A-29FD9545A5CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -103,6 +107,10 @@ Global
 		{7299CADE-5E6B-429C-8E33-51B74B35BC7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7299CADE-5E6B-429C-8E33-51B74B35BC7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7299CADE-5E6B-429C-8E33-51B74B35BC7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6360F132-213A-4ECA-943A-29FD9545A5CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6360F132-213A-4ECA-943A-29FD9545A5CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6360F132-213A-4ECA-943A-29FD9545A5CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6360F132-213A-4ECA-943A-29FD9545A5CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -120,6 +128,7 @@ Global
 		{3C6CC96A-B6F5-4604-B944-23FA31DD9729} = {55845D2D-6702-4904-9359-75DC1D407E1E}
 		{B229D484-70F5-4FEC-8392-26313AC9B5D7} = {55845D2D-6702-4904-9359-75DC1D407E1E}
 		{7299CADE-5E6B-429C-8E33-51B74B35BC7D} = {55845D2D-6702-4904-9359-75DC1D407E1E}
+		{6360F132-213A-4ECA-943A-29FD9545A5CC} = {12878B02-849F-4CD5-9335-FCBCB74A3F2D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C62790FA-45C8-4324-A7F9-CBE92979BDBE}
