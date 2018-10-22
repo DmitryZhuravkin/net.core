@@ -57,6 +57,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tag.helper", "tag.helper", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZzzz.Learning.Core.Tag.Helper.Init", "DZzzz.Learning.Core.Tag.Helper.Init\DZzzz.Learning.Core.Tag.Helper.Init.csproj", "{34978728-E494-4C62-8A03-DA0D954ED28E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZzzz.Learning.Core.Form.Tag.Helpers", "DZzzz.Learning.Core.Form.Tag.Helpers\DZzzz.Learning.Core.Form.Tag.Helpers.csproj", "{B7D475BD-D2A0-40A8-9411-D9C31F111F01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -119,6 +121,10 @@ Global
 		{34978728-E494-4C62-8A03-DA0D954ED28E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34978728-E494-4C62-8A03-DA0D954ED28E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34978728-E494-4C62-8A03-DA0D954ED28E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7D475BD-D2A0-40A8-9411-D9C31F111F01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7D475BD-D2A0-40A8-9411-D9C31F111F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7D475BD-D2A0-40A8-9411-D9C31F111F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7D475BD-D2A0-40A8-9411-D9C31F111F01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -138,6 +144,7 @@ Global
 		{7299CADE-5E6B-429C-8E33-51B74B35BC7D} = {55845D2D-6702-4904-9359-75DC1D407E1E}
 		{6360F132-213A-4ECA-943A-29FD9545A5CC} = {12878B02-849F-4CD5-9335-FCBCB74A3F2D}
 		{34978728-E494-4C62-8A03-DA0D954ED28E} = {060307C3-2BBE-4E95-B0A8-5AFA58CA4F8B}
+		{B7D475BD-D2A0-40A8-9411-D9C31F111F01} = {060307C3-2BBE-4E95-B0A8-5AFA58CA4F8B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C62790FA-45C8-4324-A7F9-CBE92979BDBE}
