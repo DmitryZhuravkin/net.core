@@ -1,0 +1,26 @@
+﻿@model City
+@{ Layout = "_Layout"; }
+@addTagHelper DZzzz.Learning.Core.BuiltIn.Tag.Helpers.Infrastructure.TagHelpers.SelectOptionTagHelper, DZzzz.Learning.Core.BuiltIn.Tag.Helpers
+
+<form method="post" asp-action="Create" asp-controller="Home">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input class="form-control" asp-for="Name" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Country"></label>
+        <select class="form-control" model-for="Country">
+            <option disabled selected value="">Select a Country</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="Population"></label>
+        <input class="form-control" asp-for="Population" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Notes"></label>
+        <textarea class="form-control" asp-for="Notes"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+    <a class="btn btn-primary" href="/Home/Index">Cancel</a>
+</form>

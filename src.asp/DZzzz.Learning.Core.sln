@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZzzz.Learning.Core.Tag.Hel
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZzzz.Learning.Core.Form.Tag.Helpers", "DZzzz.Learning.Core.Form.Tag.Helpers\DZzzz.Learning.Core.Form.Tag.Helpers.csproj", "{B7D475BD-D2A0-40A8-9411-D9C31F111F01}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZzzz.Learning.Core.BuiltIn.Tag.Helpers", "DZzzz.Learning.Core.BuiltIn.Tag.Helpers\DZzzz.Learning.Core.BuiltIn.Tag.Helpers.csproj", "{A25D0F0A-AA38-4143-BF8F-ABF8A0889835}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -125,6 +127,10 @@ Global
 		{B7D475BD-D2A0-40A8-9411-D9C31F111F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7D475BD-D2A0-40A8-9411-D9C31F111F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7D475BD-D2A0-40A8-9411-D9C31F111F01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A25D0F0A-AA38-4143-BF8F-ABF8A0889835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A25D0F0A-AA38-4143-BF8F-ABF8A0889835}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A25D0F0A-AA38-4143-BF8F-ABF8A0889835}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A25D0F0A-AA38-4143-BF8F-ABF8A0889835}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -145,6 +151,7 @@ Global
 		{6360F132-213A-4ECA-943A-29FD9545A5CC} = {12878B02-849F-4CD5-9335-FCBCB74A3F2D}
 		{34978728-E494-4C62-8A03-DA0D954ED28E} = {060307C3-2BBE-4E95-B0A8-5AFA58CA4F8B}
 		{B7D475BD-D2A0-40A8-9411-D9C31F111F01} = {060307C3-2BBE-4E95-B0A8-5AFA58CA4F8B}
+		{A25D0F0A-AA38-4143-BF8F-ABF8A0889835} = {060307C3-2BBE-4E95-B0A8-5AFA58CA4F8B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C62790FA-45C8-4324-A7F9-CBE92979BDBE}
