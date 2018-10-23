@@ -1,20 +1,38 @@
 ﻿@model City
 @{ Layout = "_Layout"; }
+@addTagHelper DZzzz.Learning.Core.Form.Tag.Helpers.Infrastructure.TagHelpers.SelectOptionTagHelper, DZzzz.Learning.Core.Form.Tag.Helpers
 
 <form method="post" asp-action="Create" asp-controller="Home">
     @*FormTagHelper automatically generate  anti-CSRF, if we need manually - asp-antiforgery=true*@
     <div class="form-group">
-        <label for="Name">Name:</label>
+        <label asp-for="Name"></label>
         <input class="form-control" asp-for="Name" />
     </div>
     <div class="form-group">
-        <label for="Country">Country:</label>
-        <input class="form-control" asp-for="Country" />
+        <label asp-for="Country"></label>
+        @*<input class="form-control" asp-for="Country" />*@
+
+        @*<select class="form-control" asp-for="Country" asp-items="@new SelectList(Enum.GetNames(typeof(CountryNames)))">
+            @*or we can use ViewBag and init it from Controller*@
+        @*asp-items uses only IEnumerable<SelectListItem>, or SelectList collection
+                <option disabled selected value="">Select a Country</option>
+            </select>*@
+
+        <select class="form-control" model-for="Country">
+            <option disabled selected value="">Select a Country</option>
+        </select>
+
     </div>
     <div class="form-group">
-        <label for="Population">Population:</label>
+        <label asp-for="Population"></label>
         <input class="form-control" asp-for="Population" /> @*we can use this approach for formatting - asp-format="{0:#,###}"*@
     </div>
+    <div class="form-group">
+        <label asp-for="Notes"></label>
+        <textarea class="form-control" asp-for="Notes"></textarea>
+    </div>
+
+
     <button type="submit" class="btn btn-primary">Add</button>
     <a class="btn btn-primary" href="/Home/Index">Cancel</a>
 </form>
