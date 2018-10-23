@@ -3,7 +3,36 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Cities</title>
-    <link asp-href-include="lib/twitter-bootstrap/css/*.min.css" rel="stylesheet" />
+
+    @*ScriptTagHelper*@
+    @*<script asp-src-include="lib/jquery/**/*.js"></script>*@ @*all JS files in jquery and subfolders*@
+    @*<script asp-src-include="lib/jquery/**/*.min.js"></script>*@ @*all JS min files in jquery and subfolders*@
+
+    @*asp-append-version="true" disable script caching (but version will be identical until file is changed)*@
+    @*all JS min files in jquery and subfolders, but exclude slim (with two patterns splitted by comma)*@
+    @*<script asp-src-include="lib/jquery/**/*.min.js" asp-src-exclude="**.slim.**" asp-append-version="true"></script>*@
+
+    @*enable CDN and, in case of issues with CDN, use local files*@
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"
+            asp-fallback-src-include="lib/jquery/**/*.min.js"
+            asp-fallback-src-exclude="**.slim.**"
+            asp-fallback-test="window.jQuery">
+    </script>
+
+    @*LinkTagHelper*@
+    @*<link asp-href-include="lib/twitter-bootstrap/**/*.min.css"
+        asp-href-exclude="**/*-reboot*,**/*-grid*"
+        rel="stylesheet" />*@
+
+    @*CDN example*@
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          asp-fallback-href-include="/lib/bootstrap/dist/**/*.min.css"
+          asp-fallback-href-exclude="**/*-reboot*,**/*-grid*"
+          asp-fallback-test-class="btn"
+          asp-fallback-test-property="display"
+          asp-fallback-test-value="inline-block"
+          rel="stylesheet" />
+
 </head>
 <body class="m-1 p-1">
     @*EnvironmentTagHelper*@
@@ -19,6 +48,24 @@
             <h2>This is Production</h2>
         </div>
     </environment>
+    @*ImageTagHelper*@
+    <img src="https://www.gettyimages.ca/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg" asp-append-version="true" />
+
+    @*CacheTagHelper - use RAM for caching, by default contant is cached for ALL requests*@
+    @*<cache>
+            @await Component.InvokeAsync("Time")
+        </cache>*@
+
+    @*Set up expiration*@
+    @*<cache expires-after="@TimeSpan.FromSeconds(15)">
+            @await Component.InvokeAsync("Time")
+        </cache>*@
+
+    @*For each different route we will have separate versio of cached content with own expiration*@
+    <cache expires-sliding="@TimeSpan.FromSeconds(10)" vary-by-route="action">
+        @await Component.InvokeAsync("Time")
+    </cache>
+
     <div>@RenderBody()</div>
 </body>
 </html>
