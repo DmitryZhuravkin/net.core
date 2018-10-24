@@ -18,6 +18,28 @@ namespace DZzzz.Learning.Core.Model.Binding.Controllers
             repository = repo;
         }
 
-        public ViewResult Index(int id) => View(repository[id]);
+        public IActionResult Index(int? id)
+        {
+            Person person;
+            if (id.HasValue && (person = repository[id.Value]) != null)
+            {
+                return View(person);
+            }
+
+            return NotFound();
+        }
+
+        public IActionResult Create() => View(new Person());
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Person person) => View("Index", person);
+
+        // Bind attribute specify Prefix value which is used on HTML: right now HomeAddress.City can be bound to City property for AddressSummary
+        
+        public IActionResult DisplaySummary([Bind(Prefix = nameof(Person.HomeAddress))]AddressSummary summary) => View(summary);
+
+        // Also bind can be used to bind only specific list of properties
+        //public IActionResult DisplaySummary([Bind(nameof(AddressSummary.City), Prefix = nameof(Person.HomeAddress))]AddressSummary summary) => View(summary);
     }
 }
