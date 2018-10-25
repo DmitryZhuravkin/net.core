@@ -63,7 +63,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DZzzz.Learning.Core.BuiltIn
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "model.binding", "model.binding", "{B0D10D03-AD48-468A-8D74-DFF53CB5E68E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZzzz.Learning.Core.Model.Binding", "DZzzz.Learning.Core.Model.Binding\DZzzz.Learning.Core.Model.Binding.csproj", "{CE439A97-9C1A-4DD3-8057-8013079C1DAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DZzzz.Learning.Core.Model.Binding", "DZzzz.Learning.Core.Model.Binding\DZzzz.Learning.Core.Model.Binding.csproj", "{CE439A97-9C1A-4DD3-8057-8013079C1DAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "identity", "identity", "{B66CA3FF-2D8F-423B-8407-81D8A8F26ED8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "validation", "validation", "{09B2CA4A-82D3-429B-B573-56E796269951}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZzzz.Learning.Core.Identity.Init", "DZzzz.Learning.Core.Identity.Init\DZzzz.Learning.Core.Identity.Init.csproj", "{DD43B64E-B746-4E5F-B134-F9AE3F3562E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -139,6 +145,10 @@ Global
 		{CE439A97-9C1A-4DD3-8057-8013079C1DAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE439A97-9C1A-4DD3-8057-8013079C1DAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE439A97-9C1A-4DD3-8057-8013079C1DAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD43B64E-B746-4E5F-B134-F9AE3F3562E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD43B64E-B746-4E5F-B134-F9AE3F3562E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD43B64E-B746-4E5F-B134-F9AE3F3562E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD43B64E-B746-4E5F-B134-F9AE3F3562E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -161,6 +171,7 @@ Global
 		{B7D475BD-D2A0-40A8-9411-D9C31F111F01} = {060307C3-2BBE-4E95-B0A8-5AFA58CA4F8B}
 		{A25D0F0A-AA38-4143-BF8F-ABF8A0889835} = {060307C3-2BBE-4E95-B0A8-5AFA58CA4F8B}
 		{CE439A97-9C1A-4DD3-8057-8013079C1DAB} = {B0D10D03-AD48-468A-8D74-DFF53CB5E68E}
+		{DD43B64E-B746-4E5F-B134-F9AE3F3562E5} = {B66CA3FF-2D8F-423B-8407-81D8A8F26ED8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C62790FA-45C8-4324-A7F9-CBE92979BDBE}

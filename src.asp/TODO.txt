@@ -1,0 +1,2 @@
+1. Controllers and actions
+2. Validation
